@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ToDo Log In</title>
+<link rel='stylesheet' href='CSS/style.css' type='text/css' />
+</head>
+
+  <body>
+  <!-- Main div code -->
+  <div id="main">
+  <div class="h-tag">
+  <h2>Please Sign In to Your ToDoList WebApp</h2>
+  </div>
+  <!-- create account div -->
+  <div class="login">
+  <table cellspacing="2" align="center" cellpadding="8" border="0">
+  <tr>
+  <td align="right">Username :</td>
+  <td><input type="text" placeholder="Enter Your Username" id="t1" class="tb" /></td>
+  </tr>
+  <tr>
+  <td align="right">Password :</td>
+  <td><input type="password" placeholder="Enter Your Password" id="t2" class="tb" /></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+  <input type="reset" value="Clear Fields" onclick="clearFunc()" id="res" class="btn" />
+  <input type="submit" value="Sign In" class="btn" onclick="registration()" /></td>
+  </tr>
+  </table>
+  </div>
+ 
+  </div>
+  <!-- Main div ending here... -->
+  <script src="JS/login.js"></script>
+
+  </body>
+  </html>
