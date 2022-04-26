@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>To-Do List</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -12,27 +12,23 @@
     <link rel="stylesheet" href="CSS/main_page.css">
 
 </head>
-<body>
+<body onload="ajax()">
   <div class="fixed-top">
     <nav class="navbar navbar-dark btn-warning">
         <form class="form-inline">
           <div class="margin1">
-          <a button class="btn btn-outline-success" href="todo_list.html"><h5>To-Do List</h5></button></a>
+          <a button class="btn btn-outline-success" href="todo_list.html"><h5>To Do List</h5></button></a>
           </div>
           <div class="margin2">
           <a button class="btn btn-outline-success" href="index.html"><h5>Log Out</h5></button></a>
           </div>
         </form>
       </nav>
-    </div>
-    <div class="margin3">
-      <h1>Welcome to Your To-Do List WebApp!</h1>
-    </div>
-    <div class="margin4">
-      <h5>Click on the buttons provided at the top to navigate further.</h5>
-    </div>
-    <div class="margin5">
-      <h5>Have a Nice Day!</h5>
-    </div>
+  </div>
+
+  <div id="demo" class="margin3"></div>
+
+  <script src="JS/todo_list.js"></script>
+
 </body>
 </html>
